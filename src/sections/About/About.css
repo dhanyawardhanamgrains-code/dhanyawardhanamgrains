@@ -1,0 +1,764 @@
+.about-section-container {
+    width: 100%;
+    height: fit-content;
+    gap: 0.625rem; /* 10px converted to rem */
+    padding: 1rem 1rem;
+}
+
+@media (min-width: 768px) {
+    .about-section-container {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-section-container {
+        padding: 1rem 3rem;
+    }
+}
+
+.about-container {
+    width: 100%;
+    height: fit-content;
+    gap: 2rem; /* 32px converted to rem */
+    border-radius: 1.5rem; /* 24px converted to rem */
+    padding: 2rem 1rem 0 1rem; /* 32px top, 16px sides, 0 bottom */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .about-container {
+        gap: 3rem; /* 48px converted to rem */
+        padding: 3rem 2rem 0 2rem; /* 48px top, 32px sides, 0 bottom */
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-container {
+        padding: 3rem 3rem 0 3rem; /* 48px all around except bottom */
+    }
+}
+
+.about-text-container {
+    width: 100%;
+    max-width: 67rem; /* 1072px converted to rem */
+    height: auto;
+    gap: 0.5rem; /* 8px converted to rem */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-text-container h1 {
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* SemiBold = 600 */
+    font-style: normal;
+    font-size: 1.75rem; /* 28px converted to rem */
+    line-height: 1.2;
+    letter-spacing: 0;
+    text-align: center;
+    vertical-align: middle;
+    color: #16171C;
+}
+
+@media (min-width: 768px) {
+    .about-text-container h1 {
+        font-size: 2.25rem; /* 36px converted to rem */
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-text-container h1 {
+        font-size: 2.5rem; /* 40px converted to rem */
+    }
+}
+
+.about-text-container p {
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; /* Medium = 500 */
+    font-style: normal;
+    font-size: 0.875rem; /* 14px converted to rem */
+    line-height: 1.3;
+    letter-spacing: 0;
+    text-align: center;
+    color: #6A6B6E;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .about-text-container p {
+        font-size: 1rem; /* 16px converted to rem */
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-text-container p {
+        font-size: 1.125rem; /* 18px converted to rem */
+    }
+}
+
+.about-content-container {
+    width: 100%;
+    height: 100%;
+    gap: 1.5rem; /* 24px converted to rem */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-story-container {
+    width: 100%;
+    height: 100%;
+    gap: 1.5rem; /* 24px converted to rem */
+    border-radius: 1.5rem; /* 24px converted to rem */
+    padding: 2rem 1rem; /* 32px top/bottom, 16px left/right */
+    background: #76A63F14; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .about-story-container {
+        gap: 2rem; /* 32px converted to rem */
+        padding: 2rem; /* 32px all around */
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-story-container {
+        gap: 3rem; /* 48px converted to rem */
+    }
+}
+
+.about-story-text-container {
+    width: 100%;
+    height: 100%;
+    gap: 0.75rem; /* 12px converted to rem */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .about-story-text-container {
+        width: 60%;
+    }
+}
+
+.about-story-text-container h1 {
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* SemiBold = 600 */
+    font-style: normal;
+    font-size: 1.25rem; /* 20px converted to rem */
+    line-height: 1.2;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #16171C;
+}
+
+@media (min-width: 768px) {
+    .about-story-text-container h1 {
+        font-size: 1.5rem; /* 24px converted to rem */
+    }
+}
+
+.about-story-text-container p {
+    width: 100%;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; /* Regular = 400 */
+    font-style: normal;
+    font-size: 0.875rem; /* 14px converted to rem */
+    line-height: 1.3;
+    letter-spacing: 0;
+    color: #6A6B6E;
+}
+
+@media (min-width: 768px) {
+    .about-story-text-container p {
+        font-size: 1rem; /* 16px converted to rem */
+    }
+}
+
+.about-story-img {
+    width: 100%;
+    max-width: 25rem; /* 400px converted to rem */
+    height: auto;
+    aspect-ratio: 400/317;
+    border-radius: 1rem; /* 16px converted to rem */
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .about-story-img {
+        width: 35%;
+        max-width: none;
+    }
+}
+
+.about-leadership-container {
+    width: 100%;
+    height: auto;
+    gap: 1.5rem; /* 24px converted to rem */
+    border-radius: 1.5rem; /* 24px converted to rem */
+    padding: 2rem 1rem; /* 32px top/bottom, 16px left/right */
+    background: #76A63F14; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+@media (min-width: 768px) {
+    .about-leadership-container {
+        padding: 2rem; /* 32px all around */
+    }
+}
+
+.about-leadership-container h1 {
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* SemiBold = 600 */
+    font-style: normal;
+    font-size: 1.25rem; /* 20px converted to rem */
+    line-height: 1.2;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #16171C;
+}
+
+@media (min-width: 768px) {
+    .about-leadership-container h1 {
+        font-size: 1.5rem; /* 24px converted to rem */
+    }
+}
+
+.about-leadership-card-container {
+    width: 100%;
+    height: 100%;
+    gap: 1.5rem; /* 24px converted to rem */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .about-leadership-card-container {
+        flex-direction: row;
+    }
+}
+
+.leadership-card {
+    width: 100%;
+    height: auto;
+    min-width: 0; /* Allow cards to shrink */
+    gap: 0.75rem; /* 12px converted to rem */
+    border-radius: 1rem; /* 16px converted to rem */
+    padding: 1.5rem; /* 24px converted to rem */
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.leadership-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.leadership-card-details {
+    width: 100%;
+    height: auto;
+    gap: 1rem; /* 16px converted to rem */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.leadership-card-details h1 {
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* SemiBold = 600 */
+    font-style: normal;
+    font-size: 1.125rem; /* 18px converted to rem */
+    line-height: 1.2;
+    letter-spacing: 0; 
+    color: #16171C;
+}
+
+@media (min-width: 768px) {
+    .leadership-card-details h1 {
+        font-size: 1.25rem; /* 20px converted to rem */
+    }
+}
+
+.leadership-card-title {
+    width: fit-content;
+    height: fit-content;
+    gap: 0.75rem; /* 12px converted to rem */
+    border-radius: 1.5rem; /* 24px converted to rem */
+    padding: 0.5rem 1rem; /* 8px top/bottom, 16px left/right */
+    background: 
+      linear-gradient(0deg, rgba(245, 147, 33, 0.4), rgba(245, 147, 33, 0.4)),
+      linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+
+.leadership-card-title p {
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; /* Medium = 500 */
+    font-style: normal;
+    font-size: 0.75rem; /* 12px converted to rem */
+    line-height: 1.2;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #16171C;
+    background: 
+      linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+      linear-gradient(0deg, rgba(22, 23, 28, 0.64), rgba(22, 23, 28, 0.64));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.leadership-card-details-text {
+    width: 100%;
+    height: auto;
+    gap: 0.25rem; /* 4px converted to rem */
+}
+
+.leadership-card-details-text p {
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; /* Regular = 400 */
+    font-style: normal;
+    font-size: 0.875rem; /* 14px converted to rem */
+    line-height: 1.3;
+    letter-spacing: 0;
+    color: #16171CA3;
+}
+
+@media (min-width: 768px) {
+    .leadership-card-details-text p {
+        font-size: 1rem; /* 16px converted to rem */
+    }
+}
+
+.leadership-card-title-span {
+    font-weight: 600;
+    color: #16171C;
+}
+
+.documentation-container {
+    width: 100%;
+    height: auto;
+    gap: 1.5rem; /* 24px converted to rem */
+    border-radius: 1.5rem; /* 24px converted to rem */
+    padding: 2rem 1rem; /* 32px top/bottom, 16px left/right */
+    background: #76A63F14;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+@media (min-width: 768px) {
+    .documentation-container {
+        padding: 2rem; /* 32px all around */
+    }
+}
+
+.documentation-container h1 {
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* SemiBold = 600 */
+    font-style: normal;
+    font-size: 1.25rem; /* 20px converted to rem */
+    line-height: 1.2;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #16171C;
+}
+
+@media (min-width: 768px) {
+    .documentation-container h1 {
+        font-size: 1.5rem; /* 24px converted to rem */
+    }
+}
+
+.documentation-card-container {
+    width: 100%;
+    height: 100%;
+    gap: 1rem; /* 16px converted to rem */
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .documentation-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .documentation-card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.documentation-card {
+    width: 100%;
+    height: 100%;
+    min-width: 0; /* Allow cards to shrink */
+    gap: 0.75rem; /* 12px converted to rem */
+    border-radius: 1rem; /* 16px converted to rem */
+    padding: 1rem; /* 16px converted to rem */
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.documentation-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.documentation-card-details {
+    width: 100%;
+    height: fit-content;
+    gap: 0.75rem; /* 12px converted to rem */
+    display: flex;  
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.documentation-card-details-text {
+    width: 100%;
+    height: fit-content;
+    gap: 0.25rem; /* 4px converted to rem */
+    padding-right: 0.25rem; /* 4px converted to rem */
+    padding-left: 0.25rem; /* 4px converted to rem */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.documentation-card-details-text span {
+    font-weight: 600;
+    color: #16171C;
+}
+
+.documentation-card-details-text p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-style: normal; /* "Regular" maps to normal */
+    font-size: 0.75rem; /* 12px converted to rem */
+    line-height: 1.2;
+    letter-spacing: 0%;
+    color: #16171CA3; 
+}
+
+@media (min-width: 768px) {
+    .documentation-card-details-text p {
+        font-size: 0.875rem; /* 14px converted to rem */
+    }
+}
+
+.documentation-card-details-id-container {
+    width: fit-content;
+    height: fit-content;
+    display: flex;           /* needed if you want gap to work */
+    gap: 0.75rem; /* 12px converted to rem */
+    border-radius: 1.5rem; /* 24px converted to rem */
+    padding: 0.5rem 1rem;       /* 8px top/bottom, 16px left/right */
+    background: #76A63F14; 
+}
+
+.documentation-card-details-id-container p {
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;       /* "Medium" maps to 500 */
+    font-style: normal;
+    font-size: 0.75rem; /* 12px converted to rem */
+    line-height: 1.2;
+    letter-spacing: 0;
+    vertical-align: middle;
+    background: 
+      linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+      linear-gradient(0deg, rgba(22, 23, 28, 0.64), rgba(22, 23, 28, 0.64)),
+      linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;   /* for Firefox */
+    color: transparent;
+}
+
+.make-us-different-container {
+    width: 100%;
+    height: 100%;
+    display: flex;           /* required if you want gap to work */
+    gap: 1.5rem; /* 24px converted to rem */
+    border-radius: 1.5rem; /* 24px converted to rem */
+    padding: 2rem 1rem; /* 32px top/bottom, 16px left/right */
+    background: #76A63F14; 
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+@media (min-width: 768px) {
+    .make-us-different-container {
+        padding: 2rem; /* 32px all around */
+    }
+}
+
+.make-us-different-container h1 {
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;       /* "SemiBold" maps to 600 */
+    font-style: normal;
+    font-size: 1.25rem; /* 20px converted to rem */
+    line-height: 1.2;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #16171C;
+}
+
+@media (min-width: 768px) {
+    .make-us-different-container h1 {
+        font-size: 1.5rem; /* 24px converted to rem */
+    }
+}
+
+.make-us-card-container {
+    width: 100%;
+    height: auto;
+    display: grid;        /* required if you want gap to apply */
+    gap: 1rem; /* 16px converted to rem */
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .make-us-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.make-us-card {
+    width: 100%;
+    height: auto;
+    min-width: 0; /* Allow cards to shrink */
+    display: flex;         /* needed if you want gap to work */
+    gap: 1.5rem; /* 24px converted to rem */
+    border-radius: 1rem; /* 16px converted to rem */
+    padding: 1.5rem; /* 24px converted to rem */
+    background: #FFFFFF;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.make-us-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 768px) {
+    .make-us-card {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.make-us-card-details {
+    width: 100%;
+    height: fit-content;
+    display: flex;        /* required if you want gap to work */
+    gap: 0.5rem; /* 8px converted to rem */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.make-us-card-details h1 {
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;       /* "SemiBold" → 600 */
+    font-style: normal;
+    font-size: 1rem; /* 16px converted to rem */
+    line-height: 1.2;
+    letter-spacing: 0;
+    color: #16171C;
+}
+
+@media (min-width: 768px) {
+    .make-us-card-details h1 {
+        font-size: 1.125rem; /* 18px converted to rem */
+    }
+}
+
+.make-us-card-details p {
+    width: 100%;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;       /* "Regular" → 400 */
+    font-style: normal;
+    font-size: 0.875rem; /* 14px converted to rem */
+    line-height: 1.3;
+    letter-spacing: 0;
+    color: #16171CA3;
+}
+
+@media (min-width: 768px) {
+    .make-us-card-details p {
+        font-size: 1rem; /* 16px converted to rem */
+    }
+}
+
+.about-quote-container {
+    width: 100%;
+    height: 100%;
+    display: flex;           /* needed if you want gap to work */
+    gap: 1.5rem; /* 24px converted to rem */
+    border-radius: 1.5rem; /* 24px converted to rem */
+    padding: 1.75rem 1rem;      /* 28px top/bottom, 16px left/right */
+    background: #76A63F;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .about-quote-container {
+        padding: 1.75rem 2rem; /* 28px top/bottom, 32px left/right */
+        gap: 2.5rem; /* 40px converted to rem */
+    }
+}
+
+.about-quote-text-container {
+    width: 100%;
+    height: auto;
+    display: flex;       /* required if you want gap to work */
+    gap: 0.5rem; /* 8px converted to rem */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-quote-text-container h1 {
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;       /* "SemiBold" → 600 */
+    font-style: normal;
+    font-size: 1.25rem; /* 20px converted to rem */
+    line-height: 1.2;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+    .about-quote-text-container h1 {
+        font-size: 1.5rem; /* 24px converted to rem */
+    }
+}
+
+.about-quote-text-container p {
+    width: 100%;
+    max-width: 90%;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;       /* "Medium" → 500 */
+    font-style: normal;
+    font-size: 0.875rem; /* 14px converted to rem */
+    line-height: 1.3;
+    letter-spacing: 0;
+    text-align: center;
+    color: #FFFFFFA3;
+}
+
+@media (min-width: 768px) {
+    .about-quote-text-container p {
+        font-size: 1rem; /* 16px converted to rem */
+        max-width: 80%;
+    }
+}
+
+/* Additional responsive improvements */
+@media (max-width: 480px) {
+    .about-section-container {
+        padding: 0.5rem;
+    }
+    
+    .about-container {
+        padding: 1.5rem 0.75rem 0 0.75rem;
+        gap: 1.5rem;
+    }
+    
+    .about-story-container,
+    .about-leadership-container,
+    .documentation-container,
+    .make-us-different-container {
+        padding: 1.5rem 0.75rem;
+    }
+    
+    .about-quote-container {
+        padding: 1.5rem 0.75rem;
+    }
+}
+
+/* Ensure images are responsive */
+.leadership-card img,
+.documentation-card img,
+.make-us-card img {
+    width: 2rem; /* 32px converted to rem */
+    height: 2rem; /* 32px converted to rem */
+    flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+    .leadership-card img,
+    .documentation-card img,
+    .make-us-card img {
+        width: 2.5rem; /* 40px converted to rem */
+        height: 2.5rem; /* 40px converted to rem */
+    }
+}

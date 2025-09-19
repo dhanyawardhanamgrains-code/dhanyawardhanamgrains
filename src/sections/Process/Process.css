@@ -1,0 +1,267 @@
+.process-section-container {
+    width: 100%;
+    padding: 1rem 1rem; /* 16px all around */
+    gap: 0.625rem;              /* 10px converted to rem */
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .process-section-container {
+        padding: 1rem 2rem; /* 16px top/bottom, 32px left/right */
+    }
+}
+
+@media (min-width: 1024px) {
+    .process-section-container {
+        padding: 1rem 3rem; /* 16px top/bottom, 48px left/right */
+    }
+}
+
+.process-container {
+    width: 100%;
+    height: fit-content;
+    gap: 2rem;                  /* 32px converted to rem */
+    border-radius: 1.5rem;      /* 24px converted to rem */
+    padding: 2rem 1rem;         /* 32px top/bottom, 16px left/right */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .process-container {
+        gap: 2.5rem;            /* 40px converted to rem */
+        padding: 2.5rem 2rem;   /* 40px top/bottom, 32px left/right */
+    }
+}
+
+@media (min-width: 1024px) {
+    .process-container {
+        gap: 3rem;              /* 48px converted to rem */
+        padding: 3rem;          /* 48px all around */
+    }
+}
+
+.process-text-container {
+    width: 100%;
+    max-width: 67rem;           /* 1072px converted to rem */
+    height: fit-content;
+    gap: 0.5rem;                /* 8px converted to rem */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.process-text-container h1 {
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* SemiBold = 600 */
+    font-style: normal;
+    font-size: 1.75rem;         /* 28px converted to rem */
+    line-height: 1.2;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #16171C;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .process-text-container h1 {
+        font-size: 2.25rem;     /* 36px converted to rem */
+    }
+}
+
+@media (min-width: 1024px) {
+    .process-text-container h1 {
+        font-size: 2.5rem;      /* 40px converted to rem */
+    }
+}
+
+.process-text-container p {
+    width: 100%;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; /* Medium = 500 */
+    font-style: normal;
+    font-size: 0.875rem;        /* 14px converted to rem */
+    line-height: 1.3;
+    letter-spacing: 0;
+    text-align: center;
+    color: #6A6B6E;
+    margin: 0;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .process-text-container p {
+        font-size: 1rem;        /* 16px converted to rem */
+    }
+}
+
+@media (min-width: 1024px) {
+    .process-text-container p {
+        font-size: 1.125rem;    /* 18px converted to rem */
+    }
+}
+
+.process-content-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;                /* 24px converted to rem */
+}
+
+.process-step-container {
+    width: 100%;
+    padding: 0 0.5rem;          /* 8px converted to rem */
+}
+
+@media (min-width: 768px) {
+    .process-step-container {
+        padding: 0 1rem;        /* 16px converted to rem */
+    }
+}
+
+@media (min-width: 1024px) {
+    .process-step-container {
+        padding: 0 1.25rem;     /* 20px converted to rem */
+    }
+}
+
+.process-quote-container {
+    width: 100%;
+    height: fit-content;
+    padding: 1.5rem 1rem;       /* 24px top/bottom, 16px left/right */
+    gap: 1.5rem;                /* 24px converted to rem */
+    border-radius: 1.5rem;      /* 24px converted to rem */
+    background: #76A63F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .process-quote-container {
+        padding: 1.75rem 2rem;  /* 28px top/bottom, 32px left/right */
+        gap: 2rem;              /* 32px converted to rem */
+    }
+}
+
+@media (min-width: 1024px) {
+    .process-quote-container {
+        padding: 1.75rem 2rem;  /* 28px top/bottom, 32px left/right */
+        gap: 2.5rem;            /* 40px converted to rem */
+    }
+}
+
+.process-quote-text-container {
+    width: 100%;
+    gap: 0.5rem;                /* 8px converted to rem */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.process-quote-text-container h1 {
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* SemiBold = 600 */
+    font-style: normal;
+    font-size: 1.25rem;         /* 20px converted to rem */
+    line-height: 1.2;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .process-quote-text-container h1 {
+        font-size: 1.375rem;    /* 22px converted to rem */
+    }
+}
+
+@media (min-width: 1024px) {
+    .process-quote-text-container h1 {
+        font-size: 1.5rem;      /* 24px converted to rem */
+    }
+}
+
+.process-quote-text-container p {
+    width: 100%;
+    max-width: 90%;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; /* Medium = 500 */
+    font-style: normal;
+    font-size: 0.875rem;        /* 14px converted to rem */
+    line-height: 1.3;
+    letter-spacing: 0;
+    text-align: center;
+    color: #FFFFFFA3; /* 8-digit hex with alpha */
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .process-quote-text-container p {
+        font-size: 0.9375rem;   /* 15px converted to rem */
+        max-width: 85%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .process-quote-text-container p {
+        font-size: 1rem;        /* 16px converted to rem */
+        max-width: 80%;
+    }
+}
+
+/* Additional responsive improvements for very small screens */
+@media (max-width: 480px) {
+    .process-section-container {
+        padding: 0.5rem;
+    }
+    
+    .process-container {
+        padding: 1.5rem 0.75rem;
+        gap: 1.5rem;
+        border-radius: 1rem;
+    }
+    
+    .process-text-container h1 {
+        font-size: 1.5rem;          /* 24px */
+    }
+    
+    .process-text-container p {
+        font-size: 0.8125rem;       /* 13px */
+    }
+    
+    .process-step-container {
+        padding: 0 0.25rem;
+    }
+    
+    .process-quote-container {
+        padding: 1rem 0.75rem;
+        gap: 1rem;
+        border-radius: 1rem;
+    }
+    
+    .process-quote-text-container h1 {
+        font-size: 1.125rem;        /* 18px */
+    }
+    
+    .process-quote-text-container p {
+        font-size: 0.8125rem;       /* 13px */
+    }
+}
