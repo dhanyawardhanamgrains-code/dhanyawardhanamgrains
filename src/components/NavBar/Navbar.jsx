@@ -15,7 +15,9 @@ const Navbar = () => {
   return <>
     <div  id="nav" className='navbar-container'>
       <div className='nav-container'>
-        <div className='logo-container'>
+        <div className='logo-container' onClick={() => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }} style={{ cursor: 'pointer' }}>
           <img className='logo-img' src="/logo.svg" alt="logo" />
           <div className='text-block'>
             <h1>Dhanyawardhanam</h1>
