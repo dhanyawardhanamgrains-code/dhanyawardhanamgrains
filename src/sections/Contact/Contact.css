@@ -124,7 +124,6 @@
 
 @media (min-width: 1024px) {
     .contact-form-container {
-        flex-direction: row;
         align-items: flex-start;
         gap: 2rem; /* 32px converted to rem */
     }
@@ -140,7 +139,6 @@
     /* needed if you want gap to work */
     gap: 1rem; /* 16px converted to rem */
     border-radius: 1.25rem; /* 20px converted to rem */
-    padding: 1.5rem; /* 24px converted to rem */
     background: #FFFFFF;
     border: 1px solid;
     /* fallback border */
@@ -149,12 +147,11 @@
             rgba(255, 255, 255, 0.16) 44.79%,
             rgba(255, 255, 255, 0.32) 71.98%);
     border-image-slice: 1;
-    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
 }
 
 @media (min-width: 1024px) {
     .contact-details-container {
-        width: 40%;
+        width: 100%;
         min-width: 20rem; /* 320px converted to rem */
     }
 }
@@ -162,12 +159,16 @@
 .contact-details-card-container {
     width: 100%;
     height: fit-content;
-    display: flex;
+    display: grid;
     /* needed if you want gap to apply */
     gap: 1rem; /* 16px converted to rem */
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 64rem) {
+    .contact-details-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .contact-details-card-details {
@@ -182,12 +183,17 @@
     border-radius: 1rem; /* 16px converted to rem */
     padding: 1.5rem; /* 24px converted to rem */
     background: #76A63F14;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .contact-details-card-details:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 20rem) {
+    .contact-details-card-details {
+        flex-direction: column;
+    }
 }
 
 .contact-details-card-details-text {
@@ -198,7 +204,6 @@
     align-items: flex-start;
     justify-content: center;
     gap: 0.25rem; /* 4px converted to rem */
-    padding: 0 0.25rem; /* 4px converted to rem */
 }
 
 .contact-details-card-details-text h1 {
@@ -359,7 +364,6 @@
             rgba(255, 255, 255, 0.16) 44.79%,
             rgba(255, 255, 255, 0.32) 71.98%);
     border-image-slice: 1;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 768px) {
@@ -370,7 +374,7 @@
 
 @media (min-width: 1024px) {
     .form-container {
-        width: 60%;
+        width: 100%;
         min-width: 25rem; /* 400px converted to rem */
     }
 }
@@ -448,13 +452,12 @@
     font-family: 'Poppins', sans-serif;
     font-size: 0.875rem; /* 14px converted to rem */
     color: #16171C;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    transition: border-color 0.2s ease;
 }
 
 .contact-form-details-input-container input:focus {
     outline: none;
     border-color: #76A63F;
-    box-shadow: 0 0 0 2px rgba(118, 166, 63, 0.2);
 }
 
 @media (min-width: 768px) {
@@ -478,13 +481,12 @@
     font-size: 0.875rem; /* 14px converted to rem */
     color: #16171C;
     line-height: 1.5;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    transition: border-color 0.2s ease;
 }
 
 .contact-form-details-input-container textarea:focus {
     outline: none;
     border-color: #76A63F;
-    box-shadow: 0 0 0 2px rgba(118, 166, 63, 0.2);
 }
 
 @media (min-width: 768px) {
@@ -512,7 +514,6 @@
 #contact-form-button:hover {
     background: #6a9538;
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(118, 166, 63, 0.3);
 }
 
 #contact-form-button:active {

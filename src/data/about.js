@@ -15,7 +15,7 @@ export const leadershipData = [
     title: "Founder & CEO",
     description: "Director at Junnar Ambegaon Rice Mill Cluster",
     phone: "+91 8407988260",
-    email: "dhanywardhanamgrains@gmail.com",
+    email: "dhanyawardhanamgrains@gmail.com",
   },
 ];
 

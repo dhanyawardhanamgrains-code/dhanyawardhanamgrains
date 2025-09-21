@@ -129,8 +129,6 @@
 }
 
 .benefits-card {
-    width: 100%;
-    height: fit-content;
     min-width: 0; /* Allow cards to shrink */
     gap: 0.75rem; /* 12px converted to rem */
     border-radius: 1rem; /* 16px converted to rem */
@@ -138,13 +136,11 @@
     background: #FFFFFF;
     display: flex;
     align-items: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .benefits-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .benefits-card-details {
@@ -272,7 +268,7 @@
 @media (min-width: 768px) {
     .benefits-quote-text-container p {
         font-size: 1rem; /* 16px converted to rem */
-        max-width: 80%;
+        max-width: 100%;
     }
 }
 
@@ -295,7 +291,6 @@
 #benefits-button:hover {
     background: #f8f9fa;
     transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 #benefits-button p {

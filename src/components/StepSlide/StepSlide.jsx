@@ -3,7 +3,7 @@ import "./StepSlide.css";
 
 const StepSlide = ({ data }) => {
   return (
-    <article className="step-slide-container">
+    <div className="step-slide-container">
       <div className="step-slide-image-wrapper">
         <img 
           src={data.img} 
@@ -34,7 +34,7 @@ const StepSlide = ({ data }) => {
           )}
         </div>
       </div>
-    </article>
+    </div>
   );
 };
 

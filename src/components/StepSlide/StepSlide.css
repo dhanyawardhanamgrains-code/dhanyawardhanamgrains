@@ -1,6 +1,5 @@
 .step-slide-container {
     width: 100%;
-    max-width: 20rem; /* 320px converted to rem */
     height: fit-content;
     gap: 1rem;                  /* 16px converted to rem */
     border-radius: 1.25rem;     /* 20px converted to rem */
@@ -21,13 +20,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .step-slide-container:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .step-slide-image-wrapper {
@@ -41,7 +38,6 @@
 
 .step-slide-container img {
     width: 100%;
-    max-width: 18.333rem;       /* 293.33px converted to rem */
     height: auto;
     aspect-ratio: 293.33/220;   /* Maintain original aspect ratio */
     object-fit: cover;
@@ -73,12 +69,11 @@
     color: #16171C;
     z-index: 1;       /* Ensure button appears above image */
     cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .step-slide-button:hover {
     transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(245, 147, 33, 0.3);
 }
 
 .step-slide-button p {
@@ -209,14 +204,11 @@
 /* Mobile Small (below 480px) - Default styles already handle this */
 @media (max-width: 29.9375rem) {
     .step-slide-container {
-        padding: 0.75rem;           /* 12px */
         gap: 0.5rem;                /* 8px */
         border-radius: 0.75rem;     /* 12px */
-        max-width: 100%;
     }
     
     .step-slide-container img {
-        max-width: 10rem;           /* 160px */
         aspect-ratio: 293.33/220;
     }
     
@@ -299,13 +291,8 @@
 /* Tablet and Mobile (768px to 1023px) */
 @media (min-width: 48rem) and (max-width: 63.9375rem) {
     .step-slide-container {
-        padding: 1.25rem;           /* 20px */
         gap: 0.875rem;              /* 14px */
         border-radius: 1rem;        /* 16px */
-    }
-    
-    .step-slide-container img {
-        max-width: 16rem;           /* 256px */
     }
     
     .step-slide-content-container h2 {
@@ -331,13 +318,7 @@
 /* Desktop (1024px to 1199px) */
 @media (min-width: 64rem) and (max-width: 74.9375rem) {
     .step-slide-container {
-        padding: 1.75rem;           /* 28px */
         gap: 1.125rem;              /* 18px */
-        max-width: 19rem;           /* 304px */
-    }
-    
-    .step-slide-container img {
-        max-width: 19rem;           /* 304px */
     }
     
     .step-slide-content-container h2 {
@@ -352,14 +333,8 @@
 /* Large Desktop (1200px and up) */
 @media (min-width: 75rem) {
     .step-slide-container {
-        padding: 2rem;              /* 32px */
         gap: 1.25rem;               /* 20px */
         border-radius: 1.5rem;      /* 24px */
-        max-width: 20rem;           /* 320px */
-    }
-    
-    .step-slide-container img {
-        max-width: 20rem;           /* 320px */
     }
     
     .step-slide-content-container h2 {

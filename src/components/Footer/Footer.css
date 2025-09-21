@@ -37,7 +37,7 @@
 
 @media (min-width: 768px) {
     .footer-details-container {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         padding: 1.75rem 2rem; /* 28px top/bottom, 32px left/right */
         gap: 2rem; /* 32px converted to rem */
@@ -46,6 +46,7 @@
 
 @media (min-width: 1024px) {
     .footer-details-container {
+        flex-direction: column;
         padding: 2rem 2.5rem; /* 32px top/bottom, 40px left/right */
         gap: 3rem; /* 48px converted to rem */
     }
@@ -149,7 +150,7 @@
 @media (min-width: 1024px) {
     .footer-details-content-container {
         grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
-        width: 50%; /* Take only 50% width of parent container */
+        width: 100%; /* Take only 50% width of parent container */
         gap: 1.5rem; /* Reduced gap to fit all 4 sections in one line */
     }
 }
@@ -258,7 +259,7 @@
 
 @media (min-width: 768px) {
     .footer-subdetails-container {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         padding: 1.25rem 2rem; /* 20px top/bottom, 32px left/right */
@@ -268,6 +269,7 @@
 
 @media (min-width: 1024px) {
     .footer-subdetails-container {
+        flex-direction: column;
         padding: 1.5rem 2.5rem; /* 24px top/bottom, 40px left/right */
         gap: 2rem; /* 32px converted to rem */
     }

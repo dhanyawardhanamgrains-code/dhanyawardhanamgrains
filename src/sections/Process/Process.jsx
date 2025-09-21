@@ -23,8 +23,9 @@ const Process = () => {
               <Swiper
                 spaceBetween={20}
                 slidesPerView={1}
-                navigation={false}
+                navigation={true}
                 loop={false}
+                cssMode={true}
                 centeredSlides={true}
                 breakpoints={{
                   320: { 

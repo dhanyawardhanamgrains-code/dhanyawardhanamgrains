@@ -17,12 +17,12 @@ export const contactData = [
     id: 3,
     image: Badge,
     title: "Email",
-    description: "dhanywardhanamgrains@gmail.com",
+    description: "dhanyawardhanamgrains@gmail.com",
   },
   {
     id: 4,
     image: Badge,
     title: "Support",
-    description: "support@dhanywardhanamgrains.in",
+    description: "support@dhanyawardhanamgrains.in",
   },
 ];

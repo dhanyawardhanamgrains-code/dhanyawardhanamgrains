@@ -132,14 +132,15 @@
 @media (min-width: 768px) {
     .about-story-container {
         gap: 2rem; /* 32px converted to rem */
-        padding: 2rem; /* 32px all around */
-        flex-direction: row;
+        /* padding: 2rem;  */
+        flex-direction: column;
     }
 }
 
 @media (min-width: 1024px) {
     .about-story-container {
         gap: 3rem; /* 48px converted to rem */
+        flex-direction: row;
     }
 }
 
@@ -155,7 +156,7 @@
 
 @media (min-width: 768px) {
     .about-story-text-container {
-        width: 60%;
+        width: 100%;
     }
 }
 
@@ -207,7 +208,14 @@
 
 @media (min-width: 768px) {
     .about-story-img {
-        width: 35%;
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-story-img {
+        width: 40%;
         max-width: none;
     }
 }
@@ -261,7 +269,7 @@
 
 @media (min-width: 768px) {
     .about-leadership-card-container {
-        flex-direction: row;
+        flex-direction: column;
     }
 }
 
@@ -277,13 +285,11 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .leadership-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .leadership-card-details {
@@ -421,13 +427,13 @@
 
 @media (min-width: 768px) {
     .documentation-card-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
 @media (min-width: 1024px) {
     .documentation-card-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -443,13 +449,11 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .documentation-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .documentation-card-details {
@@ -463,7 +467,7 @@
 }
 
 .documentation-card-details-text {
-    width: 100%;
+    width: fit-content;
     height: fit-content;
     gap: 0.25rem; /* 4px converted to rem */
     padding-right: 0.25rem; /* 4px converted to rem */
@@ -479,6 +483,12 @@
     color: #16171C;
 }
 
+@media (max-width: 25rem) {
+    .documentation-card-details-text span {
+        width: 20%;
+    }
+}
+
 .documentation-card-details-text p {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -491,7 +501,7 @@
 
 @media (min-width: 768px) {
     .documentation-card-details-text p {
-        font-size: 0.875rem; /* 14px converted to rem */
+        font-size: 0.875rem;
     }
 }
 
@@ -573,7 +583,7 @@
 
 @media (min-width: 768px) {
     .make-us-card-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -589,19 +599,17 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .make-us-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 768px) {
     .make-us-card {
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
@@ -703,7 +711,6 @@
 
 .about-quote-text-container p {
     width: 100%;
-    max-width: 90%;
     height: fit-content;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;       /* "Medium" → 500 */
@@ -718,7 +725,6 @@
 @media (min-width: 768px) {
     .about-quote-text-container p {
         font-size: 1rem; /* 16px converted to rem */
-        max-width: 80%;
     }
 }
 

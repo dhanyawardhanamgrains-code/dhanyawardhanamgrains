@@ -72,14 +72,14 @@ const Contact = () => {
                     <input type="number" placeholder="Enter your phone no." />
                   </div>
                   <div className="contact-form-details-input-container">
-                    <label>Company/Organization</label>
+                    <label>Company/Organization *</label>
                     <input type="text" placeholder="Enter company name" />
                   </div>
                 </div>
-                <div className="contact-form-details-input-container">
+                {/* <div className="contact-form-details-input-container">
                   <label>Inquiry Type</label>
                   <input type="dropdown" placeholder="Select Inquiry Type" />
-                </div>
+                </div> */}
                 <div className="contact-form-details-input-container">
                   <label>Message *</label>
                   <textarea
