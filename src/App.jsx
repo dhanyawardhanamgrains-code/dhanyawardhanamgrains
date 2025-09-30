@@ -7,6 +7,7 @@ import Benefits from './sections/Benefits/Benefits'
 import About from './sections/About/About'
 import Contact from './sections/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import SaveGrain from './sections/SaveGrain/SaveGrain'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
     <Products />
     <Process />
     <Benefits />
+    <SaveGrain />
     <About />
     <Contact />
     <Footer />

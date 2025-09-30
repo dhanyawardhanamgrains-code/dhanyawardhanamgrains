@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "./Process.css";
 import StepSlide from "../../components/StepSlide/StepSlide";
 import { stepSlides } from "../../data/process";
+import StepModal from "../../components/StepModal/StepModal";
 
 
 const Process = () => {
+  const [selectedStep, setSelectedStep] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
+  const handleStepClick = (stepData) => {
+    setSelectedStep(stepData);
+    setIsModalOpen(true);
+  }
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedStep(null);
+  }
+
   return (
     <>
       <div id="process" className="process-section-container">
@@ -63,7 +77,7 @@ const Process = () => {
                 {stepSlides.map((step) => {
                   return (
                     <SwiperSlide key={step.id}>
-                      <StepSlide data={step} />
+                      <StepSlide data={step} handleStepClick={handleStepClick} />
                     </SwiperSlide>
                   );
                 })}
@@ -82,6 +96,7 @@ const Process = () => {
           </div>
         </div>
       </div>
+      <StepModal isOpen={isModalOpen} onClose={handleCloseModal} selectedStep={selectedStep} />
     </>
   );
 };

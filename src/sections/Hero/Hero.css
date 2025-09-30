@@ -84,7 +84,7 @@
 @media (min-width: 75rem) {
     .hero-section-container {
         width: 100%;
-        padding: 1rem 2rem;        /* 16px 48px */
+        padding: 1rem 1rem;        /* 16px 48px */
     }
     
     .hero-container {       /* 720px */
@@ -115,7 +115,7 @@
 @media (min-width: 64rem) {
     .hero-section-container {
         width: 100%;
-        padding: 1rem 2rem;  /* 14px 40px */
+        padding: 1rem 1rem;  /* 14px 40px */
     }
     
     .hero-container {       /* 640px */
@@ -203,6 +203,6 @@
     }
     
     .hero-content-tiles {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }

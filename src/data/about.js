@@ -1,4 +1,7 @@
-import GreenBadge from "../assets/icon/badge_green.svg";
+import Icon1 from "../assets/icon/make_us/icon1.svg";
+import Icon2 from "../assets/icon/make_us/icon2.svg";
+import Icon3 from "../assets/icon/make_us/icon3.svg";
+import Icon4 from "../assets/icon/make_us/icon4.svg";
 
 export const leadershipData = [
   {
@@ -55,28 +58,28 @@ export const licenseData = [
 export const makeUsDifferentData = [
   {
     id: 1,
-    image: GreenBadge,
+    image: Icon1,
     title: "Government-funded Cluster",
     description:
       "Part of Junnar Ambegaon Rice Mill Cluster near Kandali MIDC, Narayangaon, Pune",
   },
   {
     id: 2,
-    image: GreenBadge,
+    image: Icon2,
     title: "Export Ready",
     description:
       "APEDA registered merchant exporter for both basmati and non-basmati rice varieties",
   },
   {
     id: 3,
-    image: GreenBadge,
+    image: Icon3,
     title: "Advanced Technology",
     description:
       "State-of-the-art parboiling and steaming equipment for premium rice processing",
   },
   {
     id: 4,
-    image: GreenBadge,
+    image: Icon4,
     title: "Experienced Team",
     description:
       "Over 4 years of expertise in rice trade and processing in the Junnar region",

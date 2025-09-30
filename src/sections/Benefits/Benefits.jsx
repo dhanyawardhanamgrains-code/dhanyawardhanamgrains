@@ -1,8 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Benefits.css";
 import { benefitsData } from "../../data/benefits";
+import BenefitModal from "../../components/BenefitModal/BenefitModal";
 
 const Benefits = () => {
+  const [selectedBenefit, setSelectedBenefit] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
+  const handleBenefitClick = (benefitData) => {
+    setSelectedBenefit(benefitData);
+    setIsModalOpen(true);
+  }
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedBenefit(null);
+  }
+
+  const handleGetQuoteClick = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   return (
     <>
       <div id="benefits" className="benefits-section-container">
@@ -17,7 +38,11 @@ const Benefits = () => {
           <div className="benefits-card-container">
             {benefitsData.map((benefit) => {
               return (
-                <div key={benefit.id} className="benefits-card">
+                <div 
+                  key={benefit.id} 
+                  className="benefits-card"
+                  onClick={() => handleBenefitClick(benefit)}
+                >
                   <div className="benefits-card-details">
                     <img src={benefit.icon} alt={`${benefit.title} icon`} />
                     <div className="benefits-card-details-text">
@@ -38,12 +63,15 @@ const Benefits = () => {
                 perfect balance of tradition and modern processing technology.
               </p>
             </div>
-            <button id="benefits-button">
+            <button 
+              id="benefits-button"
+              onClick={handleGetQuoteClick}>
               <p>Get Your Supply</p>
             </button>
           </div>
         </div>
       </div>
+      {isModalOpen && <BenefitModal isOpen={isModalOpen} selectedBenefit={selectedBenefit} onClose={handleCloseModal} />}
     </>
   );
 };

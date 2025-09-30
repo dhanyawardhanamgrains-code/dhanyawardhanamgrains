@@ -1,9 +1,14 @@
 import React from "react";
 import "./StepSlide.css";
 
-const StepSlide = ({ data }) => {
+const StepSlide = ({ data, handleStepClick }) => {
+
+  const handleClick = () => {
+    handleStepClick(data);
+  }
+
   return (
-    <div className="step-slide-container">
+    <div className="step-slide-container" onClick={handleClick}>
       <div className="step-slide-image-wrapper">
         <img 
           src={data.img} 

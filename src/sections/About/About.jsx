@@ -89,7 +89,6 @@ const About = () => {
                   return (
                     <div key={license.id} className="documentation-card">
                       <div className="documentation-card-details">
-                        <img src={Badge} alt="Badge" />
                         <div className="documentation-card-details-text">
                           <span>{license.title}</span>
                           <p>{license.fullform}</p>
@@ -109,7 +108,7 @@ const About = () => {
                 {makeUsDifferentData.map((tab) => {
                   return (
                     <div key={tab.id} className="make-us-card">
-                      <img src={GreenBadge} alt="Green Badge" />
+                      <img src={tab.image} alt="Green Badge" />
                       <div className="make-us-card-details">
                         <h1>{tab.title}</h1>
                         <p>{tab.description}</p>

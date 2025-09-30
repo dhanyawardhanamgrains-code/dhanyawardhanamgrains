@@ -1,0 +1,271 @@
+.save-grain-section-container {
+    width: 100%;
+    height: fit-content;
+    gap: 0.625rem;        /* 10px converted to rem */
+    padding: 1rem;
+}
+
+.save-grain-container {
+    width: 100%;
+    height: fit-content;
+    gap: 2rem;              /* 32px - reduced for mobile */
+    border-radius: 1.5rem;  /* 24px converted to rem */
+    padding: 2rem;          /* 32px - reduced for mobile */
+    background: #76A63F14; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.save-grain-text-container {
+    width: fit-content;
+    height: fit-content;
+    gap: 0.5rem;              /* 8px converted to rem */
+    text-align: center;
+}
+
+.save-grain-text-container h1 {
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;          /* SemiBold */
+    font-style: normal;
+    font-size: 1.75rem;       /* 28px - responsive base size */
+    line-height: 120%;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #16171C;
+    margin: 0;
+}
+
+.save-grain-card-container {
+    width: 100%;
+    max-width: 75rem;         /* Maximum width for larger screens */
+    height: fit-content;
+    gap: 1rem;                /* 16px converted to rem */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);  /* Mobile first approach */
+    justify-items: center;
+}
+
+.grain-card {
+    width: 100%;
+    max-width: 21.875rem;     /* ~350px maximum width */
+    height: fit-content;
+    gap: 0.75rem;             /* 12px converted to rem */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;      /* 16px converted to rem */
+    padding: 1rem;            /* 16px converted to rem */
+    background: #FFFFFF;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grain-card:hover {
+    transform: translateY(-0.125rem);
+}
+
+.grain-card-details {
+    width: 100%;      
+    height: fit-content;
+    gap: 0.75rem;             /* 12px converted to rem */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;            
+}
+
+.grain-card-details img {
+    width: 3rem;              /* 48px - consistent icon size */
+    height: 3rem;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.grain-card-details-text {
+    width: 100%;        
+    height: fit-content;
+    padding-right: 0.25rem;   /* 4px converted to rem */
+    padding-left: 0.25rem;
+    gap: 0.25rem;             /* 4px converted to rem */
+    display: flex;
+    flex-direction: column;
+}
+
+.grain-card-details-text h1 {
+    width: 100%;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;          /* SemiBold → 600 */
+    font-style: normal;
+    font-size: 1rem;          /* 16px converted to rem */
+    line-height: 120%;
+    letter-spacing: 0;
+    color: #16171C;
+    margin: 0;
+}
+
+.grain-card-details-text p {
+    width: 100%;              
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;             /* Regular → 400 */
+    font-style: normal;
+    font-size: 0.75rem;          /* 12px converted to rem */
+    line-height: 130%;
+    letter-spacing: 0;
+    color: #16171CA3;
+    margin: 0;
+}
+
+/* ========== RESPONSIVE MEDIA QUERIES ========== */
+
+/* Mobile Small (320px - 480px) */
+@media (max-width: 30rem) {
+    .save-grain-container {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+    
+    .save-grain-text-container h1 {
+        font-size: 1.5rem;        /* 24px */
+    }
+    
+    .grain-card {
+        padding: 0.75rem;         /* 12px */
+    }
+    
+    .grain-card-details img {
+        width: 2.5rem;            /* 40px */
+        height: 2.5rem;
+    }
+}
+
+/* Mobile Medium (481px - 640px) */
+@media (min-width: 30.0625rem) and (max-width: 40rem) {
+    .save-grain-card-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.25rem;
+    }
+    
+    .save-grain-text-container h1 {
+        font-size: 1.625rem;      /* 26px */
+    }
+}
+
+/* Tablet Small (641px - 768px) */
+@media (min-width: 40.0625rem) and (max-width: 48rem) {
+    .save-grain-card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+    
+    .save-grain-container {
+        padding: 2.5rem;
+        gap: 2.5rem;
+    }
+    
+    .save-grain-text-container h1 {
+        font-size: 2rem;          /* 32px */
+    }
+}
+
+/* Tablet Medium (769px - 1024px) */
+@media (min-width: 48.0625rem) and (max-width: 64rem) {
+    .save-grain-card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .save-grain-container {
+        padding: 3rem;
+        gap: 3rem;
+    }
+    
+    .save-grain-text-container h1 {
+        font-size: 2.25rem;       /* 36px */
+    }
+
+    .grain-card-details {
+        flex-direction: row;
+    }
+}
+
+/* Desktop Small (1025px - 1200px) */
+@media (min-width: 64.0625rem) and (max-width: 75rem) {
+    .save-grain-card-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .save-grain-container {
+        padding: 3rem;
+        gap: 3rem;
+    }
+    
+    .save-grain-text-container h1 {
+        font-size: 2.5rem;        /* 40px */
+    }
+
+    .grain-card-details {
+        flex-direction: row;
+    }
+}
+
+/* Desktop Medium (1201px - 1440px) */
+@media (min-width: 75.0625rem) and (max-width: 90rem) {
+    .save-grain-card-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
+    .save-grain-container {
+        padding: 3rem;
+        gap: 3rem;
+    }
+    
+    .save-grain-text-container h1 {
+        font-size: 2.5rem;        /* 40px */
+    }
+    
+    .grain-card {
+        padding: 1.25rem;         /* 20px */
+    }
+
+    .grain-card-details {
+        flex-direction: row;
+    }
+}
+
+/* Desktop Large (1441px+) */
+@media (min-width: 90.0625rem) {
+    .save-grain-card-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
+    .save-grain-container {
+        padding: 4rem;
+        gap: 4rem;
+    }
+    
+    .save-grain-text-container h1 {
+        font-size: 2.75rem;       /* 44px */
+    }
+    
+    .grain-card {
+        padding: 1.5rem;          /* 24px */
+    }
+    
+    .grain-card-details img {
+        width: 3.5rem;            /* 56px */
+        height: 3.5rem;
+    }
+
+    .grain-card-details {
+        flex-direction: row;
+    }
+}

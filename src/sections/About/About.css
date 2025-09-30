@@ -7,13 +7,13 @@
 
 @media (min-width: 768px) {
     .about-section-container {
-        padding: 1rem 2rem;
+        padding: 1rem 1rem;
     }
 }
 
 @media (min-width: 1024px) {
     .about-section-container {
-        padding: 1rem 3rem;
+        padding: 1rem 1rem;
     }
 }
 
@@ -267,9 +267,9 @@
     justify-content: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .about-leadership-card-container {
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 
@@ -280,12 +280,43 @@
     gap: 0.75rem; /* 12px converted to rem */
     border-radius: 1rem; /* 16px converted to rem */
     padding: 1.5rem; /* 24px converted to rem */
-    background: #FFFFFF;
+    /* background: #FFFFFF; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     transition: transform 0.2s ease;
+    position: relative;
+}
+
+.leadership-card:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: -0.75rem; /* Half of the gap (24px / 2 = 12px = 0.75rem) */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background: #76A63F3D;
+    width: 90%;
+    height: 0.125rem;
+    border-radius: 4px; 
+}
+
+@media (min-width: 1024px) {
+    .leadership-card:not(:last-child)::after {
+        bottom: auto;
+        right: -0.75rem; /* Half of the gap for horizontal layout */
+        left: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 60%;
+        width: 2px;
+        height: 169px;
+        border-radius: 4px;
+        background: #76A63F3D; 
+    }
 }
 
 .leadership-card:hover {
@@ -581,9 +612,9 @@
     grid-template-columns: 1fr;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .make-us-card-container {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -609,6 +640,13 @@
 @media (min-width: 768px) {
     .make-us-card {
         flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 1024px) {
+    .make-us-card {
+        flex-direction: row;
         align-items: flex-start;
     }
 }
@@ -674,7 +712,7 @@
 
 @media (min-width: 768px) {
     .about-quote-container {
-        padding: 1.75rem 2rem; /* 28px top/bottom, 32px left/right */
+        padding: 2.5rem 3rem; /* 28px top/bottom, 32px left/right */
         gap: 2.5rem; /* 40px converted to rem */
     }
 }

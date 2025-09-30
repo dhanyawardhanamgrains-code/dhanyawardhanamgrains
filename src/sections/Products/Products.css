@@ -2,9 +2,9 @@
     width: 100%;
     height: fit-content;
     display: flex;
-    gap: 0.9375rem;              /* 15px converted to rem */
+    gap: 10px;              /* 15px converted to rem */
     opacity: 1;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
     color: #ffff;
     box-sizing: border-box;
 }
@@ -214,7 +214,7 @@
 /* Desktop (1024px to 1199px) */
 @media (min-width: 64rem) and (max-width: 74.9375rem) {
     .products-section-container {
-        padding: 0.875rem 2.5rem;
+        padding: 0.875rem 1rem;
     }
     
     .products-container {

@@ -13,7 +13,7 @@
 
 @media (min-width: 1024px) {
     .process-section-container {
-        padding: 1rem 3rem; /* 16px top/bottom, 48px left/right */
+        padding: 1rem 1rem; /* 16px top/bottom, 48px left/right */
     }
 }
 
@@ -137,8 +137,8 @@
 
 .process-quote-container {
     width: 100%;
-    height: fit-content;
-    padding: 1.5rem 1rem;       /* 24px top/bottom, 16px left/right */
+    height: auto;
+    padding: 2.5rem 1rem;       /* 24px top/bottom, 16px left/right */
     gap: 1.5rem;                /* 24px converted to rem */
     border-radius: 1.5rem;      /* 24px converted to rem */
     background: #76A63F;
@@ -150,14 +150,14 @@
 
 @media (min-width: 768px) {
     .process-quote-container {
-        padding: 1.75rem 2rem;  /* 28px top/bottom, 32px left/right */
+        padding: 2.5rem 2rem;  /* 28px top/bottom, 32px left/right */
         gap: 2rem;              /* 32px converted to rem */
     }
 }
 
 @media (min-width: 1024px) {
     .process-quote-container {
-        padding: 1.75rem 2rem;  /* 28px top/bottom, 32px left/right */
+        padding: 2.5rem 2rem;  /* 28px top/bottom, 32px left/right */
         gap: 2.5rem;            /* 40px converted to rem */
     }
 }
