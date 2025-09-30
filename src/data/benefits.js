@@ -1,13 +1,13 @@
 import Badge from "../assets/icon/badge.svg";
 import Icon1 from "../assets/icon/Benefits/icon1.svg"
-import Icon2 from "../assets/icon/Benefits/Icon2.svg";
-import Icon3 from "../assets/icon/Benefits/Icon3.svg";
-import Icon4 from "../assets/icon/Benefits/Icon4.svg";
-import Icon5 from "../assets/icon/Benefits/Icon5.svg";
-import Icon6 from "../assets/icon/Benefits/Icon6.svg";
-import Icon7 from "../assets/icon/Benefits/Icon7.svg";
-import Icon8 from "../assets/icon/Benefits/Icon8.svg";
-import Icon9 from "../assets/icon/Benefits/Icon9.svg";
+import Icon2 from "../assets/icon/Benefits/icon2.svg";
+import Icon3 from "../assets/icon/Benefits/icon3.svg";
+import Icon4 from "../assets/icon/Benefits/icon4.svg";
+import Icon5 from "../assets/icon/Benefits/icon5.svg";
+import Icon6 from "../assets/icon/Benefits/icon6.svg";
+import Icon7 from "../assets/icon/Benefits/icon7.svg";
+import Icon8 from "../assets/icon/Benefits/icon8.svg";
+import Icon9 from "../assets/icon/Benefits/icon9.svg";
 
 export const benefitsData = [
   {
