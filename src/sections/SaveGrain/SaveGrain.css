@@ -195,7 +195,7 @@
 /* Desktop Small (1025px - 1200px) */
 @media (min-width: 64.0625rem) and (max-width: 75rem) {
     .save-grain-card-container {
-        padding: 0rem 15rem;
+        padding: 0rem 10rem;
         grid-template-columns: repeat(2, 1fr);
     }
     
@@ -249,7 +249,7 @@
 /* Desktop Large (1441px+) */
 @media (min-width: 90.0625rem) {
     .save-grain-card-container {
-        padding: 0rem 15rem;
+        padding: 0rem 10rem;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }

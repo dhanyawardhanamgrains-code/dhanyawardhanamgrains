@@ -3,6 +3,17 @@ import "./Contact.css";
 import { contactData } from "../../data/contact";
 
 const Contact = () => {
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [company, setCompany] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(fullName, email, phone, company, message);
+  }
+
   return (
     <>
       <div id="contact" className="contact-section-container">
@@ -54,7 +65,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <form className="form-container" action="onSubmit">
+            <form className="form-container" onSubmit={handleSubmit}>
               <div className="contact-form-container-details">
                 <div className="contact-form-details-container">
                   <div className="contact-form-details-input-container">
@@ -89,7 +100,7 @@ const Contact = () => {
                   ></textarea>
                 </div>
               </div>
-              <button id="contact-form-button">
+              <button id="contact-form-button" type="submit">
                 <p>Send Message</p>
               </button>
             </form>
