@@ -163,11 +163,11 @@
     }
     
     .benefit-modal-content-container {
-        padding: 1rem 1.5rem; /* 16px 24px */
+        padding: 0.75rem 1rem; /* 16px 24px */
     }
     
     .benefit-modal-content-container p {
-        font-size: 1.125rem; /* 18px */
+        font-size: 1rem; /* 18px */
     }
 }
 
@@ -182,7 +182,7 @@
     }
     
     .benefit-modal-content-container p {
-        font-size: 1.0625rem; /* 17px */
+        font-size: 1rem; /* 17px */
     }
 }
 
@@ -240,7 +240,7 @@
     }
     
     .benefit-modal-content-container {
-        padding: 0.625rem 0.875rem; /* 10px 14px */
+        padding: 0.75rem 1rem; /* 10px 14px */
     }
     
     .benefit-modal-content-container p {

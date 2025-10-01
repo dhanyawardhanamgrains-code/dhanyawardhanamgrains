@@ -124,8 +124,8 @@
 
 @media (min-width: 1024px) {
     .contact-form-container {
+        flex-direction: row;
         align-items: flex-start;
-        gap: 2rem; /* 32px converted to rem */
     }
 }
 
@@ -167,7 +167,7 @@
 
 @media (min-width: 64rem) {
     .contact-details-card-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -312,7 +312,7 @@
 }
 
 .timing-container-time {
-    width: 50%;
+    width: 60%;
     height: fit-content;
     display: flex;
     /* needed if you want gap to work */
@@ -374,8 +374,7 @@
 
 @media (min-width: 1024px) {
     .form-container {
-        width: 100%;
-        min-width: 25rem; /* 400px converted to rem */
+        width: 130%;
     }
 }
 
@@ -491,8 +490,15 @@
 
 @media (min-width: 768px) {
     .contact-form-details-input-container textarea {
-        font-size: 1rem; /* 16px converted to rem */
+        font-size: 1rem;
     }
+}
+
+@media (min-width: 1024px) {
+    .contact-form-details-input-container textarea {
+        font-size: 1rem;
+        height: 16.4rem;
+    }    
 }
 
 #contact-form-button {

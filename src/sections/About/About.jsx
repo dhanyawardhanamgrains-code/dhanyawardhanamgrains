@@ -1,8 +1,6 @@
 import React from "react";
 import "./About.css";
 import AboutImg from "../../assets/about.png";
-import Badge from "../../assets/icon/badge.svg";
-import GreenBadge from "../../assets/icon/badge_green.svg";
 import { leadershipData, licenseData, makeUsDifferentData } from "../../data/about";
 
 const About = () => {

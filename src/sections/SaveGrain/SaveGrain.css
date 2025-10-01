@@ -40,24 +40,22 @@
 }
 
 .save-grain-card-container {
-    width: 100%;
-    max-width: 75rem;         /* Maximum width for larger screens */
-    height: fit-content;
-    gap: 1rem;                /* 16px converted to rem */
+    width: 100%;      /* Maximum width for larger screens */
+    height: 100%;
     display: grid;
+    gap: 1rem;
     grid-template-columns: repeat(1, 1fr);  /* Mobile first approach */
     justify-items: center;
 }
 
 .grain-card {
     width: 100%;
-    max-width: 21.875rem;     /* ~350px maximum width */
-    height: fit-content;
+    height: 100%;
     gap: 0.75rem;             /* 12px converted to rem */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     border-radius: 1rem;      /* 16px converted to rem */
     padding: 1rem;            /* 16px converted to rem */
     background: #FFFFFF;
@@ -79,8 +77,8 @@
 }
 
 .grain-card-details img {
-    width: 3rem;              /* 48px - consistent icon size */
-    height: 3rem;
+    width: 2rem;              /* 48px - consistent icon size */
+    height: 2rem;
     object-fit: contain;
     flex-shrink: 0;
 }
@@ -139,8 +137,8 @@
     }
     
     .grain-card-details img {
-        width: 2.5rem;            /* 40px */
-        height: 2.5rem;
+        width: 2rem;            /* 40px */
+        height: 2rem;
     }
 }
 
@@ -197,8 +195,8 @@
 /* Desktop Small (1025px - 1200px) */
 @media (min-width: 64.0625rem) and (max-width: 75rem) {
     .save-grain-card-container {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
+        padding: 0rem 15rem;
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .save-grain-container {
@@ -212,6 +210,10 @@
 
     .grain-card-details {
         flex-direction: row;
+    }
+
+    .save-grain-card-container {
+        width: 80%;
     }
 }
 
@@ -232,17 +234,22 @@
     }
     
     .grain-card {
-        padding: 1.25rem;         /* 20px */
+        padding: 1rem;         /* 20px */
     }
 
     .grain-card-details {
         flex-direction: row;
+    }
+
+    .save-grain-card-container {
+        width: 80%;
     }
 }
 
 /* Desktop Large (1441px+) */
 @media (min-width: 90.0625rem) {
     .save-grain-card-container {
+        padding: 0rem 15rem;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
@@ -257,12 +264,12 @@
     }
     
     .grain-card {
-        padding: 1.5rem;          /* 24px */
+        padding: 1rem;          /* 24px */
     }
     
     .grain-card-details img {
-        width: 3.5rem;            /* 56px */
-        height: 3.5rem;
+        width: 2.5rem;            /* 56px */
+        height: 2.5rem;
     }
 
     .grain-card-details {

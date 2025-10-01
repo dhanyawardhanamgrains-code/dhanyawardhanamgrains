@@ -55,7 +55,7 @@ const StepModal = ({ isOpen, onClose, selectedStep }) => {
             <div className="step-modal-image-wrapper">
               <img src={selectedStep.img} alt={selectedStep.title} />
               <button
-                className="step-slide-button"
+                className="step-modal-slide-button"
                 aria-label={`Step ${selectedStep.id}`}
                 type="button"
               >

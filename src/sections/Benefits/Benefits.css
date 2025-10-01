@@ -136,7 +136,7 @@
     padding: 1rem; /* 16px converted to rem */
     background: #FFFFFF;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     transition: transform 0.2s ease;
 }
 
@@ -226,7 +226,7 @@
 
 @media (min-width: 768px) {
     .benefits-quote-container {
-        padding: 1.75rem 2rem; /* 28px top/bottom, 32px left/right */
+        padding: 2.5rem 2rem; /* 28px top/bottom, 32px left/right */
     }
 }
 
