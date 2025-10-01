@@ -40,7 +40,7 @@
 }
 
 .save-grain-card-container {
-    width: 100%;      /* Maximum width for larger screens */
+    width: fit-content;      /* Maximum width for larger screens */
     height: 100%;
     display: grid;
     gap: 1rem;
@@ -195,7 +195,6 @@
 /* Desktop Small (1025px - 1200px) */
 @media (min-width: 64.0625rem) and (max-width: 75rem) {
     .save-grain-card-container {
-        padding: 0rem 10rem;
         grid-template-columns: repeat(2, 1fr);
     }
     
@@ -221,7 +220,7 @@
 @media (min-width: 75.0625rem) and (max-width: 90rem) {
     .save-grain-card-container {
         grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+        gap: 1rem;
     }
     
     .save-grain-container {
@@ -249,9 +248,9 @@
 /* Desktop Large (1441px+) */
 @media (min-width: 90.0625rem) {
     .save-grain-card-container {
-        padding: 0rem 10rem;
+        width: 68%;
         grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+        gap: 1rem;
     }
     
     .save-grain-container {

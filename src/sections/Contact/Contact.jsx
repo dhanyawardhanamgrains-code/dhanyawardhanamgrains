@@ -12,7 +12,12 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(fullName, email, phone, company, message);
-  }
+    setFullName("");
+    setEmail("");
+    setPhone("");
+    setCompany("");
+    setMessage("");
+  };
 
   return (
     <>
@@ -31,7 +36,10 @@ const Contact = () => {
               <div className="contact-details-card-container">
                 {contactData.map((contact) => {
                   return (
-                    <div key={contact.id} className="contact-details-card-details">
+                    <div
+                      key={contact.id}
+                      className="contact-details-card-details"
+                    >
                       <img src={contact.image} alt={`${contact.title} icon`} />
                       <div className="contact-details-card-details-text">
                         <h1>{contact.title}</h1>
@@ -70,21 +78,41 @@ const Contact = () => {
                 <div className="contact-form-details-container">
                   <div className="contact-form-details-input-container">
                     <label>Full Name *</label>
-                    <input type="text" placeholder="Enter your name" />
+                    <input
+                      type="text"
+                      placeholder="Enter your name"
+                      value={fullName}
+                      onChange={(e) => setFullName(e.target.value)}
+                    />
                   </div>
                   <div className="contact-form-details-input-container">
                     <label>Email *</label>
-                    <input type="email" placeholder="Enter your email" />
+                    <input
+                      type="email"
+                      placeholder="Enter your email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
                   </div>
                 </div>
                 <div className="contact-form-details-container">
                   <div className="contact-form-details-input-container">
                     <label>Phone No.</label>
-                    <input type="number" placeholder="Enter your phone no." />
+                    <input
+                      type="number"
+                      placeholder="Enter your phone no."
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
+                    />
                   </div>
                   <div className="contact-form-details-input-container">
                     <label>Company/Organization *</label>
-                    <input type="text" placeholder="Enter company name" />
+                    <input
+                      type="text"
+                      placeholder="Enter company name"
+                      value={company}
+                      onChange={(e) => setCompany(e.target.value)}
+                    />
                   </div>
                 </div>
                 {/* <div className="contact-form-details-input-container">
@@ -97,6 +125,8 @@ const Contact = () => {
                     name="message"
                     id="message"
                     placeholder="Tell us about your requirements, quantity needed, delivery location, etc."
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
                 </div>
               </div>
