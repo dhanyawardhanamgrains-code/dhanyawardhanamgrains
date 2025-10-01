@@ -217,7 +217,7 @@
 }
 
 /* Desktop Medium (1201px - 1440px) */
-@media (min-width: 75.0625rem) and (max-width: 90rem) {
+@media (min-width: 75.0625rem) and (max-width: 89rem) {
     .save-grain-card-container {
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
@@ -239,16 +239,12 @@
     .grain-card-details {
         flex-direction: row;
     }
-
-    .save-grain-card-container {
-        width: 80%;
-    }
 }
 
 /* Desktop Large (1441px+) */
-@media (min-width: 90.0625rem) {
+@media (min-width: 90rem) {
     .save-grain-card-container {
-        width: 68%;
+        width: 69%;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
     }
