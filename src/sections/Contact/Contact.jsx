@@ -134,7 +134,6 @@ const Contact = () => {
 
     const data = await response.json();
     if (data.success) {
-      console.log(data);
       setResult("Message sent successfully ✅");
       setFormData({
         fullName: "",
