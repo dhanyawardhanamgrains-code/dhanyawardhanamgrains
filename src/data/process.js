@@ -1,11 +1,11 @@
 import Step1 from "../assets/process/step1.png";
-import Step2 from "../assets/process/step2.png";
-import Step3 from "../assets/process/step3.png";
+import Step2 from "../assets/process/step2.jpg";
+import Step3 from "../assets/process/step3.jpg";
 import Step4 from "../assets/process/step4.png";
-import Step5 from "../assets/process/step5.png";
+import Step5 from "../assets/process/step5.jpg";
 import Step6 from "../assets/process/step6.png";
-import Step7 from "../assets/process/step7.png";
-import Step8 from "../assets/process/step8.png";
+import Step7 from "../assets/process/step7.jpg";
+import Step8 from "../assets/process/step8.jpeg";
 
 export const stepSlides = [
   {
