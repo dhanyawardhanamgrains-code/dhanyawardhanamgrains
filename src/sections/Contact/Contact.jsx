@@ -280,10 +280,10 @@ const Contact = () => {
                         </p>
                       )}
                     </div>
-                    <p style={{ 
-                      fontSize: "12px", 
-                      color: getWordCount(formData.message) > 100 ? "red" : "#666",
-                      margin: "0"
+                    <p 
+                    id="word-count"
+                    style={{ 
+                      color: getWordCount(formData.message) > 100 ? "red" : "#666"
                     }}>
                       {getWordCount(formData.message)}/100 words
                     </p>
