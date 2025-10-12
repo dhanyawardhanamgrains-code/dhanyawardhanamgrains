@@ -6,7 +6,7 @@ export const footerDetailsLinks = [
       {
         id: 1,
         title: "Home",
-        href: "#nav",
+        href: "#hero",
       },
       {
         id: 2,

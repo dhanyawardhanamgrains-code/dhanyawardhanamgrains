@@ -7,9 +7,10 @@ padding-bottom: 20px;
 padding-left: 32px;
 gap: 8px;
 opacity: 100%;
-position:relative;
+position: fixed;
 top: 0;
-z-index: 1;
+left: 0;
+z-index: 1000;
 box-sizing: border-box;
 background-color: #FFFFFF;
 }
@@ -81,10 +82,11 @@ margin: 0;
     gap: 32px;
     opacity: 1;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .nav-links-container {
-    width: 519px;
+    width: fit-content;
     height: 19px;
     display: flex;   /* needed so gap works */
     gap: 32px;

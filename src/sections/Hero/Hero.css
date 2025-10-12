@@ -3,6 +3,7 @@
     min-height: fit-content;
     background-color: #ffffff;
     padding: 1rem 2rem;    /* 10px 30px converted to rem */
+    padding-top: 8rem;   /* 88px + 16px = 104px converted to rem to account for fixed navbar */
     box-sizing: border-box;
 }
 
@@ -85,7 +86,7 @@
     .hero-section-container {
         width: 100%;
         padding: 1rem 1rem;      
-        padding-top: 0rem;
+        padding-top: 6rem;   /* Maintain spacing for fixed navbar */
     }
     
     .hero-container {       /* 720px */
@@ -117,7 +118,7 @@
     .hero-section-container {
         width: 100%;
         padding: 1rem 1rem;
-        padding-top: 0rem;
+        padding-top: 6rem;   /* Maintain spacing for fixed navbar */
     }
     
     .hero-container {       /* 640px */
@@ -144,7 +145,7 @@
     .hero-section-container {
         width: 100%;
         padding: 1rem 1.5rem;  
-        padding-top: 0rem;
+        padding-top: 6.5rem;   /* Maintain spacing for fixed navbar */
     }
     
     .hero-container {         /* 560px */
@@ -177,7 +178,7 @@
     .hero-section-container {
         width: 100%;
         padding: 1rem 1rem;
-        padding-top: 0rem;
+        padding-top: 5.5rem;   /* 72px + 16px = 88px converted to rem for mobile navbar */
     }
     
     .hero-container {  
