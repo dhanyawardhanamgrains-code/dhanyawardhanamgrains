@@ -34,12 +34,12 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer-subdetails-container">
-            <p>© 2024 Dhanyawardhanam Grains Pvt Ltd. All rights reserved.</p>
-            <div className="footer-subdetails-container-links">
+            <p>© 2025 Dhanyawardhanam Grains Pvt Ltd. All rights reserved.</p>
+            {/* <div className="footer-subdetails-container-links">
                 <p>Privacy Policy</p>
                 <p>Terms of Service</p>
                 <p>Quality Policy</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

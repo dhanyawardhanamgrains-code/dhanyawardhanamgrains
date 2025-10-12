@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/navigation";
 import "./Process.css";
 import StepSlide from "../../components/StepSlide/StepSlide";
 import { stepSlides } from "../../data/process";
@@ -35,12 +37,14 @@ const Process = () => {
           <div className="process-content-container">
             <div className="process-step-container">
               <Swiper
+                modules={[Navigation]}
                 spaceBetween={20}
                 slidesPerView={1}
                 navigation={true}
                 loop={false}
                 cssMode={true}
-                centeredSlides={true}
+                // centeredSlides={true}
+                // accessibility={true}
                 breakpoints={{
                   320: { 
                     slidesPerView: 1, 

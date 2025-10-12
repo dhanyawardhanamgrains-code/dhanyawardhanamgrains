@@ -262,3 +262,97 @@
         font-size: 0.8125rem;       /* 13px */
     }
 }
+
+/* Custom Swiper Navigation Styles */
+.process-step-container .swiper-button-next,
+.process-step-container .swiper-button-prev {
+    box-shadow: 0 4px 12px rgba(118, 166, 63, 0.3);
+    transition: all 0.3s ease;
+    width: 3rem;
+    height: 3rem;
+    min-height: 3rem;
+    gap: 1.5rem;
+    opacity: 1;
+    border-radius: 10px;
+    padding: 0.75rem;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    z-index: 1000;
+    position: absolute;
+    background: linear-gradient(0deg, #76A63F, #76A63F),
+                linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+
+/* .process-step-container .swiper-button-next:hover,
+.process-step-container .swiper-button-prev:hover {
+    background: #5d8a2f;
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(118, 166, 63, 0.4);
+} */
+
+.process-step-container .swiper-button-next:after,
+.process-step-container .swiper-button-prev:after {
+    font-size: 2rem;            /* 18px */
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.process-step-container .swiper-button-next {
+    right: 1rem;                     
+}
+
+.process-step-container .swiper-button-prev {
+    left: 1rem;                   
+}
+
+/* Disabled state */
+.process-step-container .swiper-button-disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+.process-step-container .swiper-button-disabled:hover {
+    background: linear-gradient(0deg, #76A63F, #76A63F),
+                linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    transform: none !important;
+    box-shadow: 0 4px 12px rgba(118, 166, 63, 0.3);
+}
+
+@media (min-width: 1024px) {
+    .process-step-container .swiper-button-next,
+    .process-step-container .swiper-button-prev {
+        width: 2.5rem;                /* 64px */
+        height: 2.5rem;              /* 64px */
+        margin-top: -2.5rem;
+    }
+
+    .process-step-container .swiper-button-next {
+        margin-right: -1rem;
+    }
+
+    .process-step-container .swiper-button-prev {
+        margin-left: -1rem;
+    }
+    
+    .process-step-container .swiper-button-next:after,
+    .process-step-container .swiper-button-prev:after {
+        font-size: 1rem; 
+    }
+    
+    .process-step-container .swiper-button-next {
+        right: 1.5rem;              
+    }
+    
+    .process-step-container .swiper-button-prev {
+        left: 1.5rem;              
+    }
+}
+
+/* Hide navigation on very small screens */
+@media (max-width: 786px) {
+    .process-step-container .swiper-button-next,
+    .process-step-container .swiper-button-prev {
+        display: none;
+    }
+}

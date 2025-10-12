@@ -80,7 +80,9 @@ const About = () => {
                 })}
               </div>
             </div>
-            <div className="documentation-container">
+            <div 
+              id="documentation"
+              className="documentation-container">
               <h1>Legal Documentation & Certifications</h1>
               <div className="documentation-card-container">
                 {licenseData.map((license) => {
